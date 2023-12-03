@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabbed Browser</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="browser">
+    <div class="tabs" id="tabs">
+      <button class="add-tab-button" onclick="addTab()">+</button>
+      <div class="tab" onclick="changeTab(0)">Tab 1</div>
+    </div>
+    <div class="controls">
+      <button onclick="refreshTab()">Refresh</button>
+      <input type="text" id="urlInput" placeholder="Enter URL or search term" onkeydown="handleInput(event)">
+    </div>
+    <div class="content">
+      <iframe id="iframe0" class="iframe active" src="https://google.com"></iframe>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
